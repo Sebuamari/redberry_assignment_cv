@@ -1,0 +1,38 @@
+.landing {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/background.png");
+
+    .header {
+        position: absolute;
+        width: calc(100% - 140px);
+        box-sizing: border-box;
+        padding: 25px 0;
+        top: 0;
+        border-bottom: 1px solid #1A1A1A;
+    }
+
+    a {
+        color: #FFFFFF;
+        padding: 18px 60px;
+        background-color: #1A1A1A;
+        border: none;
+        border-radius: 8px;
+        text-decoration: none;
+        font-family: "Helvetica Neue";
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .logo {
+        position: absolute;
+        left: 1100px;
+        top: 500px;
+    }
+}

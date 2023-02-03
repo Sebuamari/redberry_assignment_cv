@@ -1,9 +1,16 @@
 import './App.css';
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Landing from './pages/Landing';
+import PersonalInfo from './pages/PersonalInfo';
 
 function App() {
   return (
-    <div className="App">
-    </div>
+    <BrowserRouter>
+        <Routes>
+          <Route path="/app" element={<Landing />} />
+          <Route path="/PersonalInfo" element={<PersonalInfo />} />
+        </Routes>
+    </BrowserRouter>
   );
 }
 
