@@ -1,6 +1,6 @@
 import logo from "../assets/logo.png";
 import redberry from "../assets/redberry.png";
-import LandingStyle from "../styles/Landing.module.scss";
+import LandingStyle from "../styles/pages/Landing.module.scss";
 import { Link } from "react-router-dom";
 
 const Landing = () => {

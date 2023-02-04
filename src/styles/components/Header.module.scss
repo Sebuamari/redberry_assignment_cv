@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+
+    .page_info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 50px 0 15px 0;
+        border-bottom: 1px solid #1A1A1A;
+
+        h1 {
+            color: #1A1A1A;
+            font-family: 'Helvetica Neue';
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+    
+    .nav_button {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFFFFF;
+        width: 40px;
+        height: 40px;
+        top: 45px;
+        left: 50px;
+        border-radius: 50%;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
