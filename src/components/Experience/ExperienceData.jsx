@@ -1,5 +1,5 @@
-import ExperienceDataStyle from "../styles/components/Experience.module.scss";
-import Header from "../components/Header";
+import ExperienceDataStyle from "../../styles/components/Experience.module.scss";
+import Header from "../Header";
 
 const ExperienceData = () => {
     return (

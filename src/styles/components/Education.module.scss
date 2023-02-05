@@ -1,0 +1,35 @@
+.education_container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    .college_and_degree {
+        margin-bottom: 5px;
+        font-family: 'HelveticaNeue';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #1A1A1A;
+    }
+
+    .class_year {
+        font-family: 'HelveticaNeue';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #919191;
+    }
+
+    .education_description {
+        margin-top: 20px;
+        font-family: 'HelveticaNeue';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        text-transform: capitalize;
+        color: #000000;
+    }
+}

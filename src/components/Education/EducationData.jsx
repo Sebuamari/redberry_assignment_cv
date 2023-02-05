@@ -1,5 +1,5 @@
-import Header from "./Header";
-import EducationDataStyle from "../styles/components/Education.module.scss";
+import Header from "../Header";
+import EducationDataStyle from "../../styles/components/Education.module.scss";
 
 const EducationData = () => {
     return (

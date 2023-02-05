@@ -10,7 +10,7 @@ const Input = ({ target, label, placeholder, validationRule }) => {
           : InputStyle.input_container
       }
     >
-      <label for={target}>{label}</label>
+      <label htmlFor={target}>{label}</label>
       <input
         id={target}
         name={target}
