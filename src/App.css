@@ -1,6 +1,6 @@
 @font-face {
-	font-family: "Helvetica Neue";  
-	src: local("Helvetica Neue"),
+	font-family: "HelveticaNeue";  
+	src: local("HelveticaNeue"),
 	  url("./fonts/HelveticaNeue.ttc") format("truetype");
 }
 
@@ -12,5 +12,5 @@ body {
 #root {
     width: 100%;
     height: 100%;
-    font-family: "Helvetica Neue";
+    font-family: "HelveticaNeue";
 }

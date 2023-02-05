@@ -1,0 +1,29 @@
+.photo_upload {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    input {
+        opacity: 0;
+        margin-left: 40px;
+        width: 110px;
+        height: 30px;
+    }
+
+    .upload_button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: -110px;
+        width: 110px;
+        height: 30px;
+        background: #0E80BF;
+        border-radius: 4px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
