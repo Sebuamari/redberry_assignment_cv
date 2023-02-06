@@ -20,11 +20,41 @@
         padding: 15px;
     }
 
+    .validated {
+        border: 1px solid rgba(152, 227, 126, 1);
+    }
+
+    .warning {
+        border: 1px solid rgba(239, 80, 80, 1);
+    }
+
     .validation_rule {
         font-family: "HelveticaNeue";
         color: #2E2E2E;
         font-size: 14px;
         font-weight: 300;
+    }
+
+    .check_icon {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        top: -55px;
+        left: calc(100% - 35px);
+        color: #98E37E;
+    }
+
+    .warning_icon {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        top: -55px;
+        left: calc(100% + 15px);
+        color: #F02424;
+    }
+
+    .hidden {
+        display: none;
     }
 
     &_width {

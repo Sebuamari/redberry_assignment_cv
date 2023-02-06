@@ -26,4 +26,26 @@
             cursor: pointer;
         }
     }
+
+    .check_icon {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        top: -55px;
+        left: calc(100% - 35px);
+        color: #98E37E;
+    }
+
+    .warning_icon {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        top: -55px;
+        left: calc(100% + 15px);
+        color: #F02424;
+    }
+
+    .hidden {
+        display: none;
+    }
 }

@@ -4,7 +4,8 @@ import Education from './Education/Education';
 import Experience from './Experience/Experience';
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdAlternateEmail } from "react-icons/md";
-import img from "./img.png"
+import star from "../assets/star.png";
+import img from "./img.png";
 
 const CV = () => {
     return (
@@ -64,6 +65,7 @@ const CV = () => {
             educationDescription="ვსწავლობდი გულმოდგინეთ. მყავდა ფრიადები. რაც შემეძლო — ვქენი. კომპიუტერები მიყვარდა. ვიჯექი ჩემთვის, ვაკაკუნებდი ამ კლავიშებზე. მეუნებოდნენ — დაჯექი, წაიკითხე რამე, რას აკაკუნებ, დრო მოვა და ჩაგიკაკუნებსო. აჰა, მოვიდა დრო და ვერა ვარ დეველოპერი?"
           />
         </div>
+        <img className={CVStyle.redberry_star} src={star} alt="redberry star" />
       </div>
     );
 }

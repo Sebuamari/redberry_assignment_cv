@@ -1,25 +1,12 @@
 import InputStyle from "../styles/layout/Input.module.scss";
 import { AiOutlineCheckCircle } from "react-icons/ai";
+import { HiOutlineCalendar } from "react-icons/hi";
 import { TiWarning } from "react-icons/ti";
 import { useEffect, useState } from "react";
 
-const Input = ({ target, label, placeholder, validationRule }) => {
+const DateInput = ({ target, label, placeholder, validationRule }) => {
   const [valid, setValid] = useState();
   const [value, setValue] = useState();
-
-  const validateName = () => {
-    const regex = /^[ა-ჰ]+$/
-    if(value && value.length >= 2 && regex.test(value)) {
-        setValid(true);
-      } else {
-        setValid(false);
-      }
-  }
-
-  useEffect(() => {
-    console.log(value);
-    value !== undefined ? validateName() : console.log("no");
-  }, [value]);
 
   return (
     <div
@@ -33,16 +20,17 @@ const Input = ({ target, label, placeholder, validationRule }) => {
       <input
         id={target}
         name={target}
-        type="text"
+        type="date"
         onChange={(e) => setValue(e.target.value)}
         className={valid ? InputStyle.input + " " + InputStyle.validated : !valid && valid !== undefined ? InputStyle.input + " " + InputStyle.warning : InputStyle.input}
         placeholder={placeholder}
       />
-      <p className={InputStyle.validation_rule}>{validationRule}</p>
+      <HiOutlineCalendar className={InputStyle.calendar}/>
       <AiOutlineCheckCircle className={valid !== undefined && valid ? InputStyle.check_icon : InputStyle.hidden}/>
-      <TiWarning className={valid || valid === undefined ? InputStyle.hidden : InputStyle.warning_icon} />
+      <TiWarning className={valid || valid === null ? InputStyle.hidden : InputStyle.warning_icon} />
+      <p className={InputStyle.validation_rule}>{validationRule}</p>
     </div>
   );
 };
 
-export default Input;
+export default DateInput;
